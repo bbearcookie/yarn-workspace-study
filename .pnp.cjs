@@ -332,6 +332,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/cors", [\
+        ["npm:2.8.14", {\
+          "packageLocation": "./.yarn/cache/@types-cors-npm-2.8.14-28a22a5678-119b8ea576.zip/node_modules/@types/cors/",\
+          "packageDependencies": [\
+            ["@types/cors", "npm:2.8.14"],\
+            ["@types/node", "npm:20.6.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/express", [\
         ["npm:4.17.17", {\
           "packageLocation": "./.yarn/cache/@types-express-npm-4.17.17-46fe8173db-0196dacc27.zip/node_modules/@types/express/",\
@@ -1142,6 +1152,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["cors", [\
+        ["npm:2.8.5", {\
+          "packageLocation": "./.yarn/cache/cors-npm-2.8.5-c9935a2d12-ced838404c.zip/node_modules/cors/",\
+          "packageDependencies": [\
+            ["cors", "npm:2.8.5"],\
+            ["object-assign", "npm:4.1.1"],\
+            ["vary", "npm:1.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["create-require", [\
         ["npm:1.1.1", {\
           "packageLocation": "./.yarn/cache/create-require-npm-1.1.1-839884ca2e-a9a1503d43.zip/node_modules/create-require/",\
@@ -1322,6 +1343,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["doctrine", "npm:3.0.0"],\
             ["esutils", "npm:2.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["dotenv", [\
+        ["npm:16.3.1", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-16.3.1-e6d380a398-15d75e7279.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:16.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1673,6 +1703,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["type-is", "npm:1.6.18"],\
             ["utils-merge", "npm:1.0.1"],\
             ["vary", "npm:1.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["express-async-errors", [\
+        ["npm:3.1.1", {\
+          "packageLocation": "./.yarn/cache/express-async-errors-npm-3.1.1-c0a6b1e552-3a2a6df8ea.zip/node_modules/express-async-errors/",\
+          "packageDependencies": [\
+            ["express-async-errors", "npm:3.1.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:1b917b2da6b3def34adb6c9b40e49acd7bec77e25b6699671015c78090fe3389e20abb9a43a0b2749c46b1386d93e20a51cc3b06b0dfc93dc635cb2b3bd20d5b#npm:3.1.1", {\
+          "packageLocation": "./.yarn/__virtual__/express-async-errors-virtual-241173bf7d/0/cache/express-async-errors-npm-3.1.1-c0a6b1e552-3a2a6df8ea.zip/node_modules/express-async-errors/",\
+          "packageDependencies": [\
+            ["express-async-errors", "virtual:1b917b2da6b3def34adb6c9b40e49acd7bec77e25b6699671015c78090fe3389e20abb9a43a0b2749c46b1386d93e20a51cc3b06b0dfc93dc635cb2b3bd20d5b#npm:3.1.1"],\
+            ["@types/express", "npm:4.17.17"],\
+            ["express", "npm:4.18.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/express",\
+            "express"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2877,6 +2929,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["object-assign", [\
+        ["npm:4.1.1", {\
+          "packageLocation": "./.yarn/cache/object-assign-npm-4.1.1-1004ad6dec-fcc6e4ea8c.zip/node_modules/object-assign/",\
+          "packageDependencies": [\
+            ["object-assign", "npm:4.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["object-inspect", [\
         ["npm:1.12.3", {\
           "packageLocation": "./.yarn/cache/object-inspect-npm-1.12.3-1e7d20f5ff-dabfd824d9.zip/node_modules/object-inspect/",\
@@ -3413,14 +3474,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/slack/",\
           "packageDependencies": [\
             ["slack", "workspace:packages/slack"],\
+            ["@types/cors", "npm:2.8.14"],\
             ["@types/express", "npm:4.17.17"],\
             ["@types/node", "npm:20.6.3"],\
             ["@typescript-eslint/eslint-plugin", "virtual:1b917b2da6b3def34adb6c9b40e49acd7bec77e25b6699671015c78090fe3389e20abb9a43a0b2749c46b1386d93e20a51cc3b06b0dfc93dc635cb2b3bd20d5b#npm:6.7.2"],\
             ["@typescript-eslint/parser", "virtual:1b917b2da6b3def34adb6c9b40e49acd7bec77e25b6699671015c78090fe3389e20abb9a43a0b2749c46b1386d93e20a51cc3b06b0dfc93dc635cb2b3bd20d5b#npm:6.7.2"],\
+            ["cors", "npm:2.8.5"],\
+            ["dotenv", "npm:16.3.1"],\
             ["eslint", "npm:8.49.0"],\
             ["eslint-config-prettier", "virtual:1b917b2da6b3def34adb6c9b40e49acd7bec77e25b6699671015c78090fe3389e20abb9a43a0b2749c46b1386d93e20a51cc3b06b0dfc93dc635cb2b3bd20d5b#npm:9.0.0"],\
             ["eslint-plugin-prettier", "virtual:1b917b2da6b3def34adb6c9b40e49acd7bec77e25b6699671015c78090fe3389e20abb9a43a0b2749c46b1386d93e20a51cc3b06b0dfc93dc635cb2b3bd20d5b#npm:5.0.0"],\
             ["express", "npm:4.18.2"],\
+            ["express-async-errors", "virtual:1b917b2da6b3def34adb6c9b40e49acd7bec77e25b6699671015c78090fe3389e20abb9a43a0b2749c46b1386d93e20a51cc3b06b0dfc93dc635cb2b3bd20d5b#npm:3.1.1"],\
             ["nodemon", "npm:3.0.1"],\
             ["ts-node", "virtual:1b917b2da6b3def34adb6c9b40e49acd7bec77e25b6699671015c78090fe3389e20abb9a43a0b2749c46b1386d93e20a51cc3b06b0dfc93dc635cb2b3bd20d5b#npm:10.9.1"],\
             ["tsconfig-paths", "npm:4.2.0"],\

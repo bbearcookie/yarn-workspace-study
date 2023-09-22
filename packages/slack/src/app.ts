@@ -1,11 +1,16 @@
-import express from 'express';
+import 'dotenv/config';
+import app from '@/configs/express';
+// import router from '@/routes';
+// import '@/configs/redis';
 
-const app = express();
+const PORT = process.env.PORT;
+
+// app.use('/', router);
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-app.listen(5000, () => {
-  console.log('Example app listening on port 5000!');
+app.listen(PORT, () => {
+  console.log(`Server is running in ${PORT} port.`);
 });
